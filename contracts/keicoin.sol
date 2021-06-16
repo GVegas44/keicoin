@@ -4,9 +4,9 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract KeyToken is ERC20 {
-    constructor(uint256 initialSupply) public ERC20 ("LottoToken", "TLotto"){
-        _mint(msg.sender,initialSupply);
+contract KeiCoin is ERC20 {
+    constructor(uint256 _supply) ERC20 ("KeiCoin", "KeiCoin") {
+        _mint(msg.sender,_supply * (10 ** decimals()));
     }
     
 }
